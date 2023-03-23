@@ -1,10 +1,13 @@
 // 1. Вивести на сторінку в один рядок через кому числа від 10 до 20.
 console.log("Task №1");
 
+const arr = [];
 for(i = 10; i <= 20; i++){
-    console.log(i);
+   arr.push(i); 
+	
     
 }
+console.log(arr);
 
 // 2.Вивести квадрати чисел від 10 до 20.
 console.log("Task №2");
@@ -28,17 +31,20 @@ console.log("Task №4");
 let sum = 0;
 for (i = 1; i <= 15; i++){
     sum = sum + i;
-    sum = (1 + 15) * 15 / 2;
-    console.log(`The sum of all integers from 1 to 15 is ${sum}`);
+   
 }
-// 5.Знайти суму всіх цілих чисел від 1 до 15.
+console.log(`The sum of all integers from 1 to 15 is ${sum}`);
+// 5.Знайти добуток усіх цілих чисел від 15 до 35.
 console.log("Task №5");
 
-let multi = 1;
-for (i = 15; i <=35; i++){
-    multi = multi * i;
-    console.log(multi);
+let multi = 1n;
+for (let i = 15n; i <= 35n; i++) {
+  multi *= i;
 }
+
+console.log(multi);
+
+
 // 6. Знайти середнє арифметичне всіх цілих чисел від 1 до 500.
 console.log("Task №6");
 
@@ -57,9 +63,16 @@ console.log(`Avarage is - ${medium}`);
 // 7. Вивести суму лише парних чисел в діапазоні від 30 до 80.
 console.log("Task №7");
 
-for(i = 30; i <= 80; i+=2){
-    console.log(i);
+let sumTask7 = 0;
+
+for(let i = 30; i <= 80; i++) {
+  if(i % 2 === 0) {
+	sumTask7 += i;
+  }
 }
+
+console.log(sumTask7);
+
 
 // 8. Вивести всі числа в діапазоні від 100 до 200 кратні 3.
 console.log("Task №8");
